@@ -20,23 +20,39 @@ function imprimir(frase) {
 }
 
 // Con variables
-var peso = prompt("Ingrese su peso en kilogramos");
-var altura = prompt("Ingrese su altura en centímetros");
+//var peso = prompt("Ingrese el peso en kilogramos");
+//var altura = prompt("Ingrese la altura en metros");
+//var nombre = prompt("Ingrese el nombre y apellido de la persona");
 
 //var imc = peso / (altura * altura);
 
 //imprimir("El índice de masa corporal es de " + imc);
 
 // Con funciones
-function calcularIMC(peso, altura) {
-    imc = peso / (altura * altura);
-}
+//function calcularIMC(peso, altura, nombre) {
+ //   imc = peso / (altura * altura);
+  //  return imc;
+//}
 
-calcularIMC(peso, altura);
-imprimir("El índice de masa corporal es de " + imc);
+//calcularIMC(peso, altura, nombre);
+//imprimir("El índice de masa corporal de " + nombre + " es de " + imc);
     
-    
-    
+//Promedio de dos personas
+function calcularIMC(peso1, altura1, nombre1, peso2, altura2, nombre2) {
+    imc1 = peso1 / (altura1 * altura1);
+    imc2 = peso2 / (altura2 * altura2);
+    promedio = imc1 +imc2 /2;
+    imprimir("El promedio del IMC de " + nombre1 + " y de " + nombre2 + " es de " + promedio);
+}
+var peso1 = prompt("Ingrese el peso en kilos de la primera persona");
+var peso2 = prompt("Ingrese el peso en kilos de la segunda persona");
+var altura1 = prompt("Ingrese la altura en metros de la primera persona");
+var altura2 = prompt("Ingrese la altura en metros de la segunda persona");
+var nombre1 = prompt("Ingrese el nombre y apellido de la primera persona");
+var nombre2 = prompt("Ingrese el nombre y apellido de la segunda persona");
+
+calcularIMC(peso1, altura1, nombre1, peso2, altura2, nombre2);
+
     </script>
 
 
