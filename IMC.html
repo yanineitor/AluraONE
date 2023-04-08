@@ -42,7 +42,7 @@ function calcularIMC(peso1, altura1, nombre1, peso2, altura2, nombre2) {
     imc1 = peso1 / (altura1 * altura1);
     imc2 = peso2 / (altura2 * altura2);
     promedio = imc1 +imc2 /2;
-    imprimir("El promedio del IMC de " + nombre1 + " y de " + nombre2 + " es de " + promedio);
+    return imc1, imc2, promedio;
 }
 var peso1 = prompt("Ingrese el peso en kilos de la primera persona");
 var peso2 = prompt("Ingrese el peso en kilos de la segunda persona");
@@ -52,7 +52,7 @@ var nombre1 = prompt("Ingrese el nombre y apellido de la primera persona");
 var nombre2 = prompt("Ingrese el nombre y apellido de la segunda persona");
 
 calcularIMC(peso1, altura1, nombre1, peso2, altura2, nombre2);
-
+imprimir("El promedio del IMC de " + nombre1 + " y de " + nombre2 + " es de " + promedio);
     </script>
 
 

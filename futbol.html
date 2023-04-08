@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programación segunda parte</title>
+</head>
+<body>
+ <h2>Cálculo de puntos de equipo de fútbol</h2>   
+    <script>
+
+function saltarlinea() {
+    document.write("<br><br><br>");
+}
+
+function imprimir(frase) {
+    document.write(frase);
+    saltarlinea();
+}
+
+var victorias = parseInt(prompt("Ingrese la cantidad de victorias del equipo"));
+var empates = parseInt(prompt("Ingrese la cantidad de empates del equipo"));
+puntajeTotal = (victorias *3) + (empates *1);
+
+imprimir("El total de puntos del equipo es de " + puntajeTotal + " puntos");
+
+
+    </script>
+
+
+</body>
+</html>
