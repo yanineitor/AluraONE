@@ -17,20 +17,30 @@ Visite <a href="http://www.aluracursos.com"> Alura Latam</a>
 
 <script>
     var saltolinea = "<br><br>";
+    //Definición de funciones: Saltar línea: añade un salto de línea. Imprimir: imprime una frase.
+
     function saltarlinea() {
         document.write(saltolinea);
     }	
+function imprimir(frase) {
+    document.write(frase);
+    }
 alert("Esto sí es un lenguaje de programación");
 </script>
 
 <h1>Usando JavaScript por primera vez</h1>
 <script>
     alert("Este es un pop-up en JavaScript");
-document.write("La edad de Christian es...");
-document.write(saltolinea);
-document.write("¿Cuánto será?");
-document.write(saltolinea);
+    //Prueba de funciones
+    saltarlinea();
+    imprimir("Hola Amigos");
+    saltarlinea();
+imprimir("La edad de Christian es...");
+saltarlinea();
+imprimir("¿Cuánto será?");
+saltarlinea();
 
+//Código sin utilización de funciones
 document.write("El promedio de edad de Christian, Luis y Carlos es de ");
 saltarlinea();
 document.write(Math.round((25+15+30)/3));
@@ -41,7 +51,8 @@ var anho= 2025;
 saltarlinea();
 document.write("Juan tendrá en " + anho + ": " + (anho-2000) + " años");
 document.write(saltolinea);
-
+imprimir("Este es el fin del Script");
+//Aquí se ve la utilidad de las funciones para la legibilidad del código
 </script>
 
 <br>
