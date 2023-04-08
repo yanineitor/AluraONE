@@ -22,8 +22,10 @@ Visite <a href="http://www.aluracursos.com"> Alura Latam</a>
     function saltarlinea() {
         document.write(saltolinea);
     }	
+//Una función utiliza otra función creada anteriormente
 function imprimir(frase) {
-    document.write(frase);
+    document.write(frase)
+    saltarlinea();
     }
 alert("Esto sí es un lenguaje de programación");
 </script>
@@ -32,13 +34,10 @@ alert("Esto sí es un lenguaje de programación");
 <script>
     alert("Este es un pop-up en JavaScript");
     //Prueba de funciones
-    saltarlinea();
-    imprimir("Hola Amigos");
-    saltarlinea();
+    
+imprimir("Hola Amigos");  
 imprimir("La edad de Christian es...");
-saltarlinea();
 imprimir("¿Cuánto será?");
-saltarlinea();
 
 //Código sin utilización de funciones
 document.write("El promedio de edad de Christian, Luis y Carlos es de ");
