@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cálculo IMC</title>
 </head>
 <body>
-    
+ <h1>Programa para calcular IMC</h1>   
     <script>
 //IMC= peso / altura al cuadrado o peso / altura * altura
+function saltarlinea() {
+    document.write("<br><br><br>");
+}
 
+function imprimir(frase) {
+    document.write(frase);
+    saltarlinea();
+}
+var peso = prompt("Ingrese su peso en kilogramos");
+var altura = prompt("Ingrese su altura en centímetros");
 
+var imc = peso / (altura * altura);
 
-
-
+imprimir("El índice de masa corporal es de " + imc);
 
     </script>
 </body>
