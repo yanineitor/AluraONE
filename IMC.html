@@ -18,13 +18,27 @@ function imprimir(frase) {
     document.write(frase);
     saltarlinea();
 }
+
+// Con variables
 var peso = prompt("Ingrese su peso en kilogramos");
 var altura = prompt("Ingrese su altura en centímetros");
 
-var imc = peso / (altura * altura);
+//var imc = peso / (altura * altura);
 
+//imprimir("El índice de masa corporal es de " + imc);
+
+// Con funciones
+function calcularIMC(peso, altura) {
+    imc = peso / (altura * altura);
+}
+
+calcularIMC(peso, altura);
 imprimir("El índice de masa corporal es de " + imc);
-
+    
+    
+    
     </script>
+
+
 </body>
 </html>
