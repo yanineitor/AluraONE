@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica IMC</title>
+</head>
+<body>
+    <script>
+        function calcularIMC(peso, altura) {
+            return peso / (altura * altura)
+        }
+
+    nombre = prompt("Ingrese el nombre de la persona");
+    pesoPer = prompt("Ingrese el peso de la persona");
+    alturaPer = prompt("Ingrese la altura de la persona");
+
+   imcCalc= calcularIMC(pesoPer, alturaPer)
+
+    document.write("El IMC de " + nombre + " es de " + imcCalc);
+    document.write("<br> <br>");
+
+    if (imcCalc < 18.5) {
+    document.write("El IMC está por debajo de lo recomendado");
+    }
+
+    if (imcCalc > 30) {
+    document.write("El IMC indica que " + nombre + " tiene obesidad");
+    }
+
+    if (imcCalc >= 18.5 && imcCalc < 25) {
+    document.write("¡Felicidades " + nombre + "!" +" Su IMC es normal");
+    }
+
+   if (imcCalc >= 25 && imcCalc < 30) {
+    document.write("¡Tenga cuidado, " + nombre +"!" + " El IMC indica que tiene preobesidad");
+    }
+
+    </script>
+    
+</body>
+</html>
