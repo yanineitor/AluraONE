@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Año Mundial de la FIFA</title>
+</head>
+<body>
+    <h1>Programa Año Mundial de la FIFA</h1>
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+var anho_Mundial = 1930;
+var anho_Limite = parseInt(prompt("Ingrese el año límite para calcular la fecha del mundial"));
+
+alert("Hubo Mundial de la FIFA en el año " + anho_Mundial);
+
+
+
+while (anho_Mundial <=  anho_Limite) {
+        alert("Hubo Mundial de la FIFA en el año " + anho_Mundial);
+        anho_Mundial = anho_Mundial + 4;
+}
+alert("Ya no habrá Mundial de la FIFA hasta el año 2026")
+    </script>
+    
+</body>
+</html>
