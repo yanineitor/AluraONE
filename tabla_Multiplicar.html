@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de tabla de multiplicar</title>
+</head>
+<body>
+    <h1>Cálculo de tabla de multiplicar</h1>
+<script>
+    var numTabla = parseInt(prompt("Ingrese el número de la tabla de multiplicar"));
+    var contador = 1;
+    var totalMultiplicacion = 0;
+    while (contador <= 10) {
+        var totalMultiplicacion = totalMultiplicacion + numTabla;
+        document.write(numTabla + " x " + contador + " = " + totalMultiplicacion + "<br>");
+        contador++;
+    }
+</script>
